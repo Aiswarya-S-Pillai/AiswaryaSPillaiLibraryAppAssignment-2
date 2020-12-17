@@ -1,0 +1,239 @@
+/* override bootstrap styles */
+@import url('http://fonts.googleapis.com/css?family=Oswald:300,400:latin,latin-ext');
+
+.navbar-form input, .form-inline input {
+  width:auto;
+}
+
+
+body{
+  height: 100vh;
+  
+  align-items: center;
+  justify-content: center;
+  background-image: url('/images/book.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+  background-size: cover;
+  
+}
+
+h1,h2,h3,.highlight,.navbar a,#masthead h4 {
+  font-family:'Oswald',arial narrow,sans-serif;
+}
+
+
+
+#masthead {
+  min-height:199px;
+  background-color:#111166;
+  color:#aaaacc;
+  
+}
+
+#masthead h1 {
+  font-size: 55px;
+  line-height: 1;
+  color:#fefeff;
+  margin-top:50px;
+}
+
+#topPanel {
+  padding-top:0px;
+  padding-left:22px;
+  padding-right:22px;
+}
+#topPanel .panel-body {
+  padding-top:0px;
+}
+
+.navbar.affix {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+
+.top-spacer {
+  background-color:#ffffff;
+  height:40px;
+}
+
+a,a:hover {
+  color:#223344;
+  text-decoration:none;
+}
+
+.icon-bar {
+  background-color:#fff;
+}
+
+@media screen and (min-width: 768px) {
+  #masthead h1 {
+    font-size: 80px;
+  }
+}
+
+.navbar-bright {
+  background-color:#111166;
+  color:#fff;
+  margin-bottom: 0;
+  border-width: 0;
+}
+
+.navbar-bright a, .navbar-bright .navbar-brand, #masthead h4 {
+  color:white;
+  font-size:14px;
+  text-transform: uppercase;
+  letter-spacing:.08em;
+  margin-left:20px;
+  margin-right:20px;
+}
+
+.navbar-bright  a:hover {
+  background-color:rgb(243, 69, 98);
+}
+
+.dropdown-menu {
+  min-width: 250px;
+}
+
+.caret {
+  color:#fff;
+}
+
+.navbar-toggle {
+  color:#fff;
+  border-width:0;
+}
+
+.navbar-toggle:hover {
+  background-color:#fff;
+}
+
+.panel {
+  border-color:transparent;
+  border-radius:0;
+}
+
+.thumbnail {
+  margin-bottom:8px;
+}
+
+.img-container {
+  overflow:hidden;
+  height:170px;
+}
+
+.img-container img {
+  min-width:280px;
+  min-height:180px;
+  max-width:380px;
+  max-height:280px;
+}
+
+.txt-container {
+  overflow:hidden;
+  height:100px;
+}
+
+.panel .lead {
+  overflow:hidden;
+  height:90px;
+}
+
+.label-float{
+  margin:0 auto;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width:100%;
+  opacity:.9;
+  padding:6px;
+  color:#fff;
+}
+
+
+  #submit{
+    margin: 10px 0;
+    width: 50%;
+    height: 50px;
+    background: #111166;
+    color:#fff;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    border:none;
+    outline:none;
+    font-family:Monotype Corsiva;
+  
+  }
+  form{
+    position: relative;
+    width: 300px;
+  }
+  h3{
+    font-size: 20px;
+    color: #f9f9f9;
+    letter-spacing: 1px;
+    font-weight:500 ;
+    text-align: center;
+  }
+  form label{
+    position: relative;
+    display: block;
+  }
+  ::placeholder { 
+    color: white;
+  }
+
+  form input{
+    margin: 10px 0;
+    width: 100%;
+    background: #292929;
+    color:white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    border:none;
+    outline:none;
+    font-family:Monotype Corsiva;
+  }
+  #email{
+    font-weight:bold;
+    font-style:italic;
+    word-spacing: normal;
+    color: wheat;
+  
+  }
+  #password{
+    font-weight:bold;
+    font-style:italic;
+    word-spacing: normal;
+    color: wheat;
+  
+  }
+  .error{
+    font-weight: 300;
+    font-style: italic;
+    padding: 5px;
+  }
+  .text-center{
+    font-weight: bold;
+    color: black;
+  }
+
+
+  .row{
+   padding: 20px;
+    margin-left:10px;
+ 
+  }
+  .row1{
+  padding-bottom: 400px;
+  }
+
+
+  .col-md-4{
+    margin-left:150px;
+   }

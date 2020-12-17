@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/signup.css" rel="stylesheet">
+	</head>
+	<body >
+   
+   
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <!--<a href="/" class="navbar-brand">Home</a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+              <%for(i=0;i<nav.length;i++){%>
+            <li>
+              <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+            </li>  
+            <%}%> 
+          </ul>
+          <ul class="nav navbar-right navbar-nav">
+         
+          </ul>
+        </nav>
+      </div>
+    </header>-->
+    <a href="/" class="navbar-brand">Home</a>
+    <a href="<%=nav[2].link%> " class="navbar-brand"><%=nav[2].name%></a>
+    <a href="<%=nav[3].link%>" class="navbar-brand"><%=nav[3].name%></a>
+    </div>
+  </header>
+ 
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+      
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <br>
+      <br>
+     <!-- <div class="col-md-5">
+        <div class="well well-lg"> <h2>Welcome to Library App</h2>
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> --><!-- /cont -->
+  
+   <!--<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+<!--</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">-->
+<div class="container">
+    <div class="row1">
+        <div class="col-md-2"></div>
+        
+        <div class="col-md-4">
+            
+           
+          <div class="row" style="margin-top: 110px; box-shadow: 1px 1px 70px 10px black;">
+
+            <form method="POST"  action="/login" onsubmit="return validate()">
+        
+        
+      <label for="password"><h2 style="font-family: Lucida Handwriting;"><u><bold>Login</bold></u></h2></label>
+        <input type="email"  placeholder="Enter the email used for signup" id="email" name="email" required>
+        <br>
+       
+        <label for="error1" id="error1"></label>
+        <input type="password"  placeholder="Enter the password used for signup" id="password" name="password" required>
+        <br>
+       
+        <label for="error" id="error"></label>
+          <button id="submit"><h5><bold>LOGIN</bold></h5></button>
+          <div id="logerror" style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;"><%=loginError%></div><br>
+       <a href="#"> <p class="text-center" style="color: black;"><u>FORGET PASSWORD ?</u></p></a>
+       
+    </div>
+  </form>
+        <script>
+            let password=document.getElementById("password");
+            let error=document.getElementById("error");
+            let num=document.getElementById("num");
+            let error1=document.getElementById("error1");
+            function validate(){
+          let exp=/^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z]{2,3})(.[a-z]{2,3})?$/;
+           if(exp.test(email.value)){
+          //  error1.innerHTML="Email is Valid";
+            error1.style.color="Green";
+          
+        }
+        else{
+        //    error1.innerHTML="Email is Invalid";
+            error1.style.color="blue";
+            return false;
+           
+        }
+
+
+//coments//
+
+        let regexp=/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+           if(regexp.test(password.value)){
+          //  error.innerHTML=" Password is Valid";
+            error.style.color="Green";
+            return true;
+        }
+        else{
+        //    error.innerHTML="Password must be at least 8 characters as well as contain at least one uppercase,one lowercase, and one Number.";
+            error.style.color="white";
+            
+            return false;
+        }
+
+            }
+    
+    
+            
+        </script>
+    
+
+</body>
+</html>

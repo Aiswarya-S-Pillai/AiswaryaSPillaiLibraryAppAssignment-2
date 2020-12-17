@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="/css/addbook.css" rel="stylesheet">
+	</head>
+	<body>
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand">Home</a>
+      <a href="<%=nav[0].link%>"  class="navbar-brand"><%=nav[0].name%></a>
+      <a href="<%=nav[4].link%>"  class="navbar-brand"><%=nav[4].name%></a>
+      <a href="<%=nav[1].link%>"  class="navbar-brand"><%=nav[1].name%></a>
+    </div>
+          <ul class="nav navbar-right navbar-nav">
+         
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+      
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <br>
+      <br>
+     <!-- <div class="col-md-5">
+        <div class="well well-lg"> <h2>Welcome to Library App</h2>
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> --><!-- /cont -->
+  
+  <!--<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div> 
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-2"></div>
+       
+        <div class="col-md-4">
+            
+           
+          <div class="row" style="margin-top: 80px; box-shadow: 1px 1px 70px 10px black;">
+
+    <!--   <form action="<%=nav[0].link%>" onsubmit="return validate()">
+      <label for="password"><h2 style="font-family: Lucida Handwriting;"><u><bold>Add New Book</bold></u></h2></label>
+         <label for="txt"></label>
+          <input id="uname" type = "text" placeholder="Title of the Book" required >
+          <label for="txt"></label>
+          <input id="uname" type = "text" placeholder="Name of the Author" required >
+          <label for="txt"></label>
+          <input id="uname" type = "text" placeholder="Genre" required >
+          <label for="avatar" ></label>
+
+       <input type="file"
+       id="Library1" name="library1"
+       accept="image/png, image/jpeg" style="font-family: Arial, Helvetica, sans-serif;">
+        
+          
+          
+      </form>-->
+      <form method="POST"  action="/AddBook/add" >  
+
+     
+        <input id="uname" type = "text" name="title" placeholder="Title of the Book" required ><br><br>
+     
+        <input id="uname" type = "text" name="author" placeholder="Name of the Author" required ><br><br>
+      
+        <input id="uname" type = "text" name="genre" placeholder="Genre" required ><br><br>
+    
+
+     <input type="file" name="image"
+                             
+     accept="image/png, image/jpeg" style="font-family: Arial, Helvetica, sans-serif;" required><br>
+     <input  type = "submit"  value="Submit" id="submit" >
+      <script>
+        function validate(){
+          return true;
+        }
+      </script>
+
+</body>
+</html>
